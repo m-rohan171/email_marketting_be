@@ -178,7 +178,6 @@ router.post('/send-email', upload.single('csvFile'), async (req, res) => {
       fs.unlinkSync(csvFile.path);
     }
 
-    // Combine all recipient emails
     const recipientList = [
       ...(recipients ? recipients.split(',').map((email) => email.trim()) : []),
       ...csvEmails,
