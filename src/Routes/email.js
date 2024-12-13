@@ -148,7 +148,7 @@ const Papa = require('papaparse'); // For parsing CSV
 const fs = require('fs');
 require('dotenv').config();
 
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+sgMail.setApiKey("process.env.SENDGRID_API_KEY");
 
 const router = express.Router();
 
